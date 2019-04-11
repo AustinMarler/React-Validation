@@ -27,10 +27,6 @@ body {
   flex-direction: column;
 }
 
-.red-border {
-  border: 1px solid red;
-}
-
 .red-font {
   color: red;
 }
@@ -42,7 +38,12 @@ body {
 }
 
 #profileFormInner {
-  width: 300px;
+  width: 400px;
+}
+
+#profileFormInner div {
+  display: flex;
+  justify-content: center;
 }
 
 #profileFormContainer {
@@ -50,7 +51,7 @@ body {
   background-color: rgb(67, 67, 67);
 }
 
-.hidden, .hidden-match {
+.hidden {
   display: none;
 }
 
@@ -67,6 +68,10 @@ body {
   background: transparent;
   border: 1px solid white;
   outline: none;
+}
+
+#profileFormContainer #profileFormInner div input.red-border {
+  border: 1px solid red;
 }
 
 #profileForm button {
