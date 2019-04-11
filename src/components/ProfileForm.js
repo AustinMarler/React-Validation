@@ -122,7 +122,6 @@ class ProfileForm extends Component {
             <div>
               <h3>Profile Form - All fields required</h3>
             </div>
-            {/* <ProfileFormInput inputName="Name" inputType="text" errorStr="- Cannot be blank" onChange={this.handleChange} value={this.state.name} ref="nameInput" /> */}
             <div className="flex-column inputContainer">
               <label htmlFor="name">Name <span ref={this.state.nameInput} className="hidden" >- Cannot be blank</span></label>
               <input onChange={this.handleChange} type="text" id="name" name="name" placeholder="Name - Cannot be blank" value={this.state.name} />
