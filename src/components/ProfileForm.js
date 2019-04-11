@@ -127,15 +127,27 @@ class ProfileForm extends Component {
         })
         var confirmPasswordSuccessMatch = this.state.confirmPasswordInputMatch.current;
         confirmPasswordSuccessMatch.className = 'hidden';
+        var confirmPasswordInputBoxSuccess = this.state.confirmPasswordInputBox.current;
+        var confirmPasswordLabelTextSuccess = this.state.confirmPasswordLabelText.current;
+        confirmPasswordInputBoxSuccess.className = '';
+        confirmPasswordLabelTextSuccess.className = '';
       } else {
         var confirmPasswordErrorMatch = this.state.confirmPasswordInputMatch.current;
         confirmPasswordErrorMatch.className = '';
+        var confirmPasswordInputBoxErr = this.state.confirmPasswordInputBox.current;
+        var confirmPasswordLabelTextErr = this.state.confirmPasswordLabelText.current;
+        confirmPasswordInputBoxErr.className = 'red-border';
+        confirmPasswordLabelTextErr.className = 'red-font';
       }
     } else {
       var confirmPasswordErr = this.state.confirmPasswordInput.current;
       confirmPasswordErr.className = '';
       var confirmPasswordErrMatch = this.state.confirmPasswordInputMatch.current;
       confirmPasswordErrMatch.className = 'hidden';
+      var confirmPasswordInputBoxErr = this.state.confirmPasswordInputBox.current;
+      var confirmPasswordLabelTextErr = this.state.confirmPasswordLabelText.current;
+      confirmPasswordInputBoxErr.className = 'red-border';
+      confirmPasswordLabelTextErr.className = 'red-font';
     }
 
     if (validator.isURL(this.state.website)) {
